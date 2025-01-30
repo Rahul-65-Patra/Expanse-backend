@@ -24,6 +24,12 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 
+app.get('/', (req, res) => {
+  res.json({ message: 'Hello, Vercel!' });
+});
+
+
+
 // routes
 
 // user routes
